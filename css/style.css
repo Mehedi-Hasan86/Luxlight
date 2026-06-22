@@ -1,0 +1,49 @@
+/* Custom Styles for LuxLight Shop */
+
+:root {
+    --primary-yellow: #facc15;
+    --dark-bg: #111827;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+}
+
+.product-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+/* Custom button styles */
+.btn-primary-lux {
+    background-color: var(--primary-yellow);
+    color: black;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary-lux:hover {
+    background-color: #eab308;
+}
+
+/* Category card overlay gradient */
+.category-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+    pointer-events: none;
+}
